@@ -1,0 +1,36 @@
+﻿namespace YakuzaDataTypes.MSG
+{
+    public enum MsgPropTypeY5 : short
+    {
+        Start = 0x100,
+        DialogueSettings = 0x101,
+        ScenarioProgress = 0x105,
+        ScenarioBranching = 0x108,
+        Choice = 0x112,
+        ChoiceBranching = 0x113,
+        ChoiceBranching2 = 0x114,
+        //UnknownBranching = 0x110,
+        SpeechPause = 0x200,
+        SetSpeaker = 0x207,
+        SetWindowType = 0x208,
+        UnknownPropWithString1 = 0x301,
+        PlayHAct = 0x302,
+        PlayActionSetAnimation = 0x309,
+        PlayAnimationLoop = 0x30A,
+        MoveToEntity = 0x30D,
+        SetVisibility = 0x310,
+        PlayAnimation = 0x312,
+        SetIdleAnimation = 0x313,
+        FaceEntity = 0x314,
+        FaceExpression = 0x316,
+        CameraParam = 0x31B,
+        TeleportToMsgCoordinate = 0x320,
+        TeleportToEntity = 0x321,
+        ScreenFadeIn = 0x322,
+        ScreenFadeOut = 0x323,
+        TalkVoice = 0x32F,
+        PlayBgm = 0x330,
+        CharacterSpeech = 0x332,
+        UnknownPropWithString2 = 0x340,
+    }
+}

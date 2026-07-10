@@ -1,0 +1,399 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\msg\\ooe\\msgooe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:msg\\ooe\\msgooe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|c:\\users\\orhan\\source\\repos\\yakuza stuff\\yakuzadatatypes\\msg\\ooe\\property\\msgpropertyooedialoguesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:msg\\ooe\\property\\msgpropertyooedialoguesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|c:\\users\\orhan\\source\\repos\\yakuza stuff\\yakuzadatatypes\\msg\\ooe\\property\\msgpropertyooespeechpause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:msg\\ooe\\property\\msgpropertyooespeechpause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|c:\\users\\orhan\\source\\repos\\yakuza stuff\\yakuzadatatypes\\msg\\prop\\msgpropspeechpause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:msg\\prop\\msgpropspeechpause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|c:\\users\\orhan\\source\\repos\\yakuza stuff\\yakuzadatatypes\\msg\\ooe\\property\\msgpropertyooesetspeaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:msg\\ooe\\property\\msgpropertyooesetspeaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|c:\\users\\orhan\\source\\repos\\yakuza stuff\\yakuzadatatypes\\msg\\ooe\\property\\msgpropertyooeplayactionsetanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:msg\\ooe\\property\\msgpropertyooeplayactionsetanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|c:\\users\\orhan\\source\\repos\\yakuza stuff\\yakuzadatatypes\\msg\\ooe\\msgpropertyooe.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:msg\\ooe\\msgpropertyooe.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|c:\\users\\orhan\\source\\repos\\yakuza stuff\\yakuzadatatypes\\msg\\ooe\\property\\msgpropertyooeplayanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:msg\\ooe\\property\\msgpropertyooeplayanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|c:\\users\\orhan\\source\\repos\\yakuza stuff\\yakuzadatatypes\\msg\\ooe\\msggroupooe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:msg\\ooe\\msggroupooe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\msg\\ooe\\msgeventooe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:msg\\ooe\\msgeventooe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\msg\\ooe\\msgsubgroupooe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:msg\\ooe\\msgsubgroupooe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|c:\\users\\orhan\\source\\repos\\yakuza stuff\\yakuzadatatypes\\msg\\msg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:msg\\msg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\msg\\ooe\\msgproptypeooe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:msg\\ooe\\msgproptypeooe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|c:\\users\\orhan\\source\\repos\\yakuza stuff\\yakuzadatatypes\\msg\\prop\\msgpropcharacterspeech.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:msg\\prop\\msgpropcharacterspeech.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|c:\\users\\orhan\\source\\repos\\yakuza stuff\\yakuzadatatypes\\msg\\msgprop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:msg\\msgprop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\scenario\\properties\\scenariopropertyauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:scenario\\properties\\scenariopropertyauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\scenario\\scenarioproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:scenario\\scenarioproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\scenario\\scenario2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:scenario\\scenario2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\scenario\\properties\\scenariopropertystarthact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:scenario\\properties\\scenariopropertystarthact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\msg\\msgevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:msg\\msgevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\msg\\msggroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:msg\\msggroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\msg\\msgproptypeunknown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2753A9D0-8D48-430D-BFFC-46CF2C195FA8}|YakuzaDataTypes.csproj|solutionrelative:msg\\msgproptypeunknown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cf577b8c-4134-11d2-83e5-00c04f9902c1}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{37aba9be-445a-11d3-9949-00c04f68fd0a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MsgPropertyOOEDialogueSettings.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\Property\\MsgPropertyOOEDialogueSettings.cs",
+              "RelativeDocumentMoniker": "MSG\\OOE\\Property\\MsgPropertyOOEDialogueSettings.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\Property\\MsgPropertyOOEDialogueSettings.cs",
+              "RelativeToolTip": "MSG\\OOE\\Property\\MsgPropertyOOEDialogueSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T09:43:53.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MsgPropSpeechPause.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\Prop\\MsgPropSpeechPause.cs",
+              "RelativeDocumentMoniker": "MSG\\Prop\\MsgPropSpeechPause.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\Prop\\MsgPropSpeechPause.cs",
+              "RelativeToolTip": "MSG\\Prop\\MsgPropSpeechPause.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T09:32:32.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MSGPropertyOOESpeechPause.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\Property\\MSGPropertyOOESpeechPause.cs",
+              "RelativeDocumentMoniker": "MSG\\OOE\\Property\\MSGPropertyOOESpeechPause.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\Property\\MSGPropertyOOESpeechPause.cs",
+              "RelativeToolTip": "MSG\\OOE\\Property\\MSGPropertyOOESpeechPause.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvxcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T09:32:27.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MsgPropertyOOESetSpeaker.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\Property\\MsgPropertyOOESetSpeaker.cs",
+              "RelativeDocumentMoniker": "MSG\\OOE\\Property\\MsgPropertyOOESetSpeaker.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\Property\\MsgPropertyOOESetSpeaker.cs",
+              "RelativeToolTip": "MSG\\OOE\\Property\\MsgPropertyOOESetSpeaker.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T08:05:04.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MsgOOE.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\MsgOOE.cs",
+              "RelativeDocumentMoniker": "MSG\\OOE\\MsgOOE.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\MsgOOE.cs",
+              "RelativeToolTip": "MSG\\OOE\\MsgOOE.cs",
+              "ViewState": "AgIAAHsBAAAAAAAAAAAowIsBAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T15:38:48.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MsgPropertyOOEPlayActionsetAnim.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\Property\\MsgPropertyOOEPlayActionsetAnim.cs",
+              "RelativeDocumentMoniker": "MSG\\OOE\\Property\\MsgPropertyOOEPlayActionsetAnim.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\Property\\MsgPropertyOOEPlayActionsetAnim.cs",
+              "RelativeToolTip": "MSG\\OOE\\Property\\MsgPropertyOOEPlayActionsetAnim.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T08:04:57.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MsgPropertyOOEPlayAnim.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\Property\\MsgPropertyOOEPlayAnim.cs",
+              "RelativeDocumentMoniker": "MSG\\OOE\\Property\\MsgPropertyOOEPlayAnim.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\Property\\MsgPropertyOOEPlayAnim.cs",
+              "RelativeToolTip": "MSG\\OOE\\Property\\MsgPropertyOOEPlayAnim.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T08:04:35.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MsgGroupOOE.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\MsgGroupOOE.cs",
+              "RelativeDocumentMoniker": "MSG\\OOE\\MsgGroupOOE.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\MsgGroupOOE.cs",
+              "RelativeToolTip": "MSG\\OOE\\MsgGroupOOE.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T07:20:56.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MsgPropertyOOE.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\MsgPropertyOOE.cs",
+              "RelativeDocumentMoniker": "MSG\\OOE\\MsgPropertyOOE.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\MsgPropertyOOE.cs",
+              "RelativeToolTip": "MSG\\OOE\\MsgPropertyOOE.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T05:33:37.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Msg.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\Msg.cs",
+              "RelativeDocumentMoniker": "MSG\\Msg.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\Msg.cs",
+              "RelativeToolTip": "MSG\\Msg.cs",
+              "ViewState": "AgIAAG8BAAAAAAAAAAAkwH8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T05:17:45.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MsgSubGroupOOE.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\MsgSubGroupOOE.cs",
+              "RelativeDocumentMoniker": "MSG\\OOE\\MsgSubGroupOOE.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\MsgSubGroupOOE.cs",
+              "RelativeToolTip": "MSG\\OOE\\MsgSubGroupOOE.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T19:58:29.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MsgEventOOE.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\MsgEventOOE.cs",
+              "RelativeDocumentMoniker": "MSG\\OOE\\MsgEventOOE.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\MsgEventOOE.cs",
+              "RelativeToolTip": "MSG\\OOE\\MsgEventOOE.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T17:40:21.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MsgPropCharacterSpeech.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\Prop\\MsgPropCharacterSpeech.cs",
+              "RelativeDocumentMoniker": "MSG\\Prop\\MsgPropCharacterSpeech.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\Prop\\MsgPropCharacterSpeech.cs",
+              "RelativeToolTip": "MSG\\Prop\\MsgPropCharacterSpeech.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T04:10:44.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MsgPropTypeOOE.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\MsgPropTypeOOE.cs",
+              "RelativeDocumentMoniker": "MSG\\OOE\\MsgPropTypeOOE.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\OOE\\MsgPropTypeOOE.cs",
+              "RelativeToolTip": "MSG\\OOE\\MsgPropTypeOOE.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T04:51:38.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MsgProp.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\MsgProp.cs",
+              "RelativeDocumentMoniker": "MSG\\MsgProp.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\MsgProp.cs",
+              "RelativeToolTip": "MSG\\MsgProp.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T04:51:01.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Scenario2.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\Scenario\\Scenario2.cs",
+              "RelativeDocumentMoniker": "Scenario\\Scenario2.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\Scenario\\Scenario2.cs",
+              "RelativeToolTip": "Scenario\\Scenario2.cs",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAuwBMBAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T02:08:09.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ScenarioPropertyAuth.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\Scenario\\Properties\\ScenarioPropertyAuth.cs",
+              "RelativeDocumentMoniker": "Scenario\\Properties\\ScenarioPropertyAuth.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\Scenario\\Properties\\ScenarioPropertyAuth.cs",
+              "RelativeToolTip": "Scenario\\Properties\\ScenarioPropertyAuth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T05:47:33.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ScenarioProperty.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\Scenario\\ScenarioProperty.cs",
+              "RelativeDocumentMoniker": "Scenario\\ScenarioProperty.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\Scenario\\ScenarioProperty.cs",
+              "RelativeToolTip": "Scenario\\ScenarioProperty.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAwDgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T05:49:48.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ScenarioPropertyStartHAct.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\Scenario\\Properties\\ScenarioPropertyStartHAct.cs",
+              "RelativeDocumentMoniker": "Scenario\\Properties\\ScenarioPropertyStartHAct.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\Scenario\\Properties\\ScenarioPropertyStartHAct.cs",
+              "RelativeToolTip": "Scenario\\Properties\\ScenarioPropertyStartHAct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T05:49:45.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MsgEvent.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\MsgEvent.cs",
+              "RelativeDocumentMoniker": "MSG\\MsgEvent.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\MsgEvent.cs",
+              "RelativeToolTip": "MSG\\MsgEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T16:34:10.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MsgGroup.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\MsgGroup.cs",
+              "RelativeDocumentMoniker": "MSG\\MsgGroup.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\MsgGroup.cs",
+              "RelativeToolTip": "MSG\\MsgGroup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T16:34:09.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MsgPropTypeUnknown.cs",
+              "DocumentMoniker": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\MsgPropTypeUnknown.cs",
+              "RelativeDocumentMoniker": "MSG\\MsgPropTypeUnknown.cs",
+              "ToolTip": "C:\\Users\\orhan\\source\\repos\\Yakuza Stuff\\YakuzaDataTypes\\MSG\\MsgPropTypeUnknown.cs",
+              "RelativeToolTip": "MSG\\MsgPropTypeUnknown.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T16:25:54.082Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

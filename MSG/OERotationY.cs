@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace YakuzaDataTypes.MSG
+{
+    public static class OERotationY
+    {
+        public static float ToAngle(ushort oeRotation)
+        {
+            float angle = (oeRotation * 360f) / ushort.MaxValue;
+            return angle;
+        }
+
+        public static ushort ToOERotation(float oeRotation)
+        {
+            ushort angle = (ushort)((oeRotation * ushort.MaxValue) / 360f);
+            return angle;
+        }
+    }
+
+}
