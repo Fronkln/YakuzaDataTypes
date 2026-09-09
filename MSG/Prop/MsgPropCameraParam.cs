@@ -26,6 +26,7 @@ namespace YakuzaDataTypes.MSG
             Flags2 = reader.ReadUInt16();
             Unk1 = reader.ReadUInt16();
 
+            /*
             if (((ushort)Flags1 & 49152) != 0)
             {
                 IntVal1 = reader.ReadInt32();
@@ -43,6 +44,7 @@ namespace YakuzaDataTypes.MSG
                 //Duration
                 FloatVal1 = reader.ReadSingle();
             }
+            */
         }
 
         internal override void WriteData(MsgGroup parentGroup, MsgEvent parentEvent, DataWriter writer, bool isOE)
@@ -51,6 +53,7 @@ namespace YakuzaDataTypes.MSG
             writer.Write(Flags2);
             writer.Write(Unk1);
 
+            /*
             if (((ushort)Flags1 & 49152) != 0)
             {
                 writer.Write(IntVal1);
@@ -66,6 +69,7 @@ namespace YakuzaDataTypes.MSG
             {
                 writer.Write(FloatVal1);
             }
+            */
         }
     }
 }

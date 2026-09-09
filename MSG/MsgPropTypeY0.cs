@@ -8,6 +8,7 @@
         Choice = 0x112,
         ChoiceBranching = 0x113,
         MoneyBranch = 0x11B,
+        HaveGiftItemBranch = 0x121,
         SetSpeaker = 0x200,
         SpeechPause = 0x209,
         UnknownPropWithString1 = 0x301,

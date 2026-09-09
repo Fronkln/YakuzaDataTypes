@@ -10,6 +10,7 @@
         ChoiceBranching = 0x113,
         ChoiceBranching2 = 0x114,
         //UnknownBranching = 0x110,
+        PlayerPointBranch = 0x11B,
         SpeechPause = 0x200,
         SetSpeaker = 0x207,
         SetWindowType = 0x208,
