@@ -54,5 +54,6 @@ namespace YakuzaDataTypes
             writer.WriteTimes(0, neededBytes);
             return neededBytes;
         }
+
     }
 }
