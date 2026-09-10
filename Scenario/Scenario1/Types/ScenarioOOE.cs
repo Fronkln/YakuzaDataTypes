@@ -9,7 +9,7 @@ namespace YakuzaDataTypes.Scenario
 {
     public class ScenarioOOE
     {
-        public List<ScenarioCollection> Collections = new List<ScenarioCollection>();
+        public List<ScenarioCollectionOOE> Collections = new List<ScenarioCollectionOOE>();
         public List<int> UnknownY4Indices = new List<int>();
         public ScenarioVersion Version;
 
@@ -49,11 +49,11 @@ namespace YakuzaDataTypes.Scenario
         {
             reader.Stream.Seek(ptr.Pointer);
 
-            Collections = new List<ScenarioCollection>();
+            Collections = new List<ScenarioCollectionOOE>();
 
             for(int i = 0; i < ptr.Size; i++)
             {
-                ScenarioCollection collection = new ScenarioCollection();
+                ScenarioCollectionOOE collection = new ScenarioCollectionOOE();
                 SizedPointer sequenceGroupsPtr = reader.Read<SizedPointer>();
 
                 collection.Unknown1 = reader.ReadInt32();

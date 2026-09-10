@@ -231,13 +231,13 @@
     <Compile Include="Scenario\Scenario1\Types\Events\ScenarioEventSoundCuesheet.cs" />
     <Compile Include="Scenario\Scenario1\Types\Events\ScenarioEventStage.cs" />
     <Compile Include="Scenario\Scenario1\Types\Events\ScenarioEventUSM.cs" />
-    <Compile Include="Scenario\Scenario1\Types\ScenarioCollection.cs" />
-    <Compile Include="Scenario\Scenario1\Types\ScenarioEvent.cs" />
+    <Compile Include="Scenario\Scenario1\Types\ScenarioCollectionOOE.cs" />
+    <Compile Include="Scenario\Scenario1\Types\ScenarioEventOOE.cs" />
     <Compile Include="Scenario\Scenario1\Types\ScenarioHeaderOOE.cs" />
     <Compile Include="Scenario\Scenario1\Types\ScenarioOOE.cs" />
     <Compile Include="Scenario\Scenario1\Types\ScenarioOOEWriter.cs" />
-    <Compile Include="Scenario\Scenario1\Types\ScenarioSequence.cs" />
-    <Compile Include="Scenario\Scenario1\Types\ScenarioSequenceGroup.cs" />
+    <Compile Include="Scenario\Scenario1\Types\ScenarioSequenceOOE.cs" />
+    <Compile Include="Scenario\Scenario1\Types\ScenarioSequenceGroupOOE.cs" />
     <Compile Include="Scenario\Scenario1\Types\SizedPointer.cs" />
     <Compile Include="Scenario\Scenario2\BaseSequence.cs" />
     <Compile Include="Scenario\Scenario2\ChapterSequence.cs" />

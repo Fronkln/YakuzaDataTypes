@@ -5,14 +5,14 @@ using Yarhl.IO;
 
 namespace YakuzaDataTypes.Scenario
 {
-    public class ScenarioCollection
+    public class ScenarioCollectionOOE
     {
-        public List<ScenarioSequenceGroup> SequenceGroups = new List<ScenarioSequenceGroup>();
+        public List<ScenarioSequenceGroupOOE> SequenceGroups = new List<ScenarioSequenceGroupOOE>();
 
         public int Unknown1;
         public int Unknown2;
 
-        public ScenarioSequenceGroup GetSequenceGroupByName(string name)
+        public ScenarioSequenceGroupOOE GetSequenceGroupByName(string name)
         {
             return SequenceGroups.FirstOrDefault(x => x.Name == name);
         }
@@ -23,7 +23,7 @@ namespace YakuzaDataTypes.Scenario
 
             for(int i = 0; i < ptr.Size; i++)
             {
-                ScenarioSequenceGroup group = new ScenarioSequenceGroup();
+                ScenarioSequenceGroupOOE group = new ScenarioSequenceGroupOOE();
                 group.Name = reader.ReadStringPointer();
 
                 SizedPointer sequencesPtr = reader.Read<SizedPointer>();
