@@ -38,8 +38,6 @@ namespace YakuzaDataTypes.Scenario
                             unkProp.UnreadData[i] = 0xBEEF;
                             unkProp.UnknownStrings.Add(reader.ReadString((long)value));
                             unkProp.UnknownStringIndices.Add(i);
-
-                            System.Diagnostics.Debug.WriteLine(unkProp.UnknownStrings[unkProp.UnknownStrings.Count - 1]);
                         }
                         else
                             unkProp.UnreadData[i] = value;
@@ -48,6 +46,7 @@ namespace YakuzaDataTypes.Scenario
                     prop = unkProp;
 
                     break;
+
 
                 case ScenarioPropertyTypeOE.BGM:
                     prop = new ScenarioPropertyBGM();
@@ -63,11 +62,23 @@ namespace YakuzaDataTypes.Scenario
                 case ScenarioPropertyTypeOE.Unknown9:
                     prop = new ScenarioPropertyUnknown() { UnreadData = new int[1] { reader.ReadInt32() } };
                     break;
+                case (ScenarioPropertyTypeOE)18:
+                    prop = new ScenarioPropertyUnknown() { UnreadData = new int[1]{ 0xBEEF }, UnknownStrings = new List<string>() { reader.ReadStringPointer() }, UnknownStringIndices = new List<int>() { 0 } };
+                    break;
+                case (ScenarioPropertyTypeOE)20:
+                    prop = new ScenarioPropertyUnknown() { UnreadData = new int[1] { reader.ReadInt32() } };
+                    break;
                 case ScenarioPropertyTypeOE.USM:
                     prop = new ScenarioPropertyUSM();
                     break;
+                case ScenarioPropertyTypeOE.ForceWeapon:
+                    prop = new ScenarioPropertyForceWeapon();
+                    break;
                 case ScenarioPropertyTypeOE.Followup:
                     prop = new ScenarioPropertyFollowup();
+                    break;
+                case (ScenarioPropertyTypeOE)36:
+                    prop = new ScenarioPropertyUnknown() { UnreadData = new int[1] { reader.ReadInt32() } };
                     break;
                 case ScenarioPropertyTypeOE.PIBArchive:
                     prop = new ScenarioPropertyPIBArchive();
@@ -77,6 +88,15 @@ namespace YakuzaDataTypes.Scenario
                     break;
                 case ScenarioPropertyTypeOE.StartHAct:
                     prop = new ScenarioPropertyStartHAct();
+                    break;
+                case ScenarioPropertyTypeOE.StartAnim:
+                    prop = new ScenarioPropertyBattleStartAnim();
+                    break;
+                case ScenarioPropertyTypeOE.StateProgress:
+                    prop = new ScenarioPropertyStateProgress();
+                    break;
+                case ScenarioPropertyTypeOE.Timer:
+                    prop = new ScenarioPropertyTimer();
                     break;
 
             }

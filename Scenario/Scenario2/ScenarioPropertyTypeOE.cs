@@ -14,9 +14,13 @@ namespace YakuzaDataTypes.Scenario
         PIBArchive = 8,
         Unknown9 = 9,
         USM = 14,
+        ForceWeapon = 16,
+        EquipReactor = 18,
         StartHAct = 19,
         StateProgress = 31,
+        Timer = 33,
         Followup = 34,
-        AuthImage = 39
+        AuthImage = 39,
+        StartAnim = 43,
     }
 }

@@ -15,5 +15,10 @@ namespace YakuzaDataTypes.Scenario
         {
             return null;
         }
+
+        public virtual int GetSequenceType()
+        {
+            return 0;
+        }
     }
 }

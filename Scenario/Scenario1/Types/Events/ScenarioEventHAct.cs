@@ -4,7 +4,7 @@ using Yarhl.IO;
 
 namespace YakuzaDataTypes.Scenario
 {
-    public class ScenarioEventHAct : ScenarioEvent
+    public class ScenarioEventHAct : ScenarioEventOOE
     {
         public uint HActID;
 

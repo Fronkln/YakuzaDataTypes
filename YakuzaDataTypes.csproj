@@ -240,16 +240,22 @@
     <Compile Include="Scenario\Scenario1\Types\ScenarioSequenceGroupOOE.cs" />
     <Compile Include="Scenario\Scenario1\Types\SizedPointer.cs" />
     <Compile Include="Scenario\Scenario2\BaseSequence.cs" />
+    <Compile Include="Scenario\Scenario2\BranchSequence.cs" />
     <Compile Include="Scenario\Scenario2\ChapterSequence.cs" />
     <Compile Include="Scenario\Scenario2\MissionSequence.cs" />
+    <Compile Include="Scenario\Scenario2\Properties\ScenarioProperty9.cs" />
     <Compile Include="Scenario\Scenario2\Properties\ScenarioPropertyAuth.cs" />
     <Compile Include="Scenario\Scenario2\Properties\ScenarioPropertyAuthImage.cs" />
+    <Compile Include="Scenario\Scenario2\Properties\ScenarioPropertyBattleStartAnim.cs" />
     <Compile Include="Scenario\Scenario2\Properties\ScenarioPropertyBGM.cs" />
     <Compile Include="Scenario\Scenario2\Properties\ScenarioPropertyCaption.cs" />
+    <Compile Include="Scenario\Scenario2\Properties\ScenarioPropertyForceWeapon.cs" />
     <Compile Include="Scenario\Scenario2\Properties\ScenarioPropertyFollowup.cs" />
     <Compile Include="Scenario\Scenario2\Properties\ScenarioPropertyOneString.cs" />
     <Compile Include="Scenario\Scenario2\Properties\ScenarioPropertyPIBArchive.cs" />
     <Compile Include="Scenario\Scenario2\Properties\ScenarioPropertyStartHAct.cs" />
+    <Compile Include="Scenario\Scenario2\Properties\ScenarioPropertyStateProgress.cs" />
+    <Compile Include="Scenario\Scenario2\Properties\ScenarioPropertyTimer.cs" />
     <Compile Include="Scenario\Scenario2\Properties\ScenarioPropertyTitleCard.cs" />
     <Compile Include="Scenario\Scenario2\Properties\ScenarioPropertyUnknown.cs" />
     <Compile Include="Scenario\Scenario2\Properties\ScenarioPropertyUSM.cs" />
@@ -258,7 +264,14 @@
     <Compile Include="Scenario\Scenario2\ScenarioPropertyTypeOE.cs" />
     <Compile Include="Scenario\Scenario2\ScenarioSetting.cs" />
     <Compile Include="Scenario\Scenario2\ScenarioTypeOE.cs" />
-    <Compile Include="Scenario\Scenario2\State\ScenarioStateOE.cs" />
+    <Compile Include="Scenario\Scenario2\State\ScenarioStateCategory.cs" />
+    <Compile Include="Scenario\Scenario2\State\ScenarioStateChunk2.cs" />
+    <Compile Include="Scenario\Scenario2\State\ScenarioStateChunk2Entry.cs" />
+    <Compile Include="Scenario\Scenario2\State\ScenarioStateEnum.cs" />
+    <Compile Include="Scenario\Scenario2\State\ScenarioStateGroup.cs" />
+    <Compile Include="Scenario\Scenario2\State\ScenarioStateCounter.cs" />
+    <Compile Include="Scenario\Scenario2\State\ScenarioStateTimer.cs" />
+    <Compile Include="Scenario\ScenarioState\ScenarioState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -20,5 +20,10 @@ namespace YakuzaDataTypes.Scenario
 
             return Settings[0].Name;
         }
+
+        public override int GetSequenceType()
+        {
+            return 5;
+        }
     }
 }

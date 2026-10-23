@@ -43,6 +43,19 @@ public static class DataReaderExtension
         }
     }
 
+    public static string ReadStringPointer(this DataReader reader, int address)
+    {
+        string str = null;
+
+        reader.Stream.RunInPosition(delegate
+        {
+            str = reader.ReadStringPointer();
+        }, address);
+
+        return str;
+    }
+
+
     public static string ReadString(this DataReader reader, long pointer)
     {
         if (pointer <= 0)

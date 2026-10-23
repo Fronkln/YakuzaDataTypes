@@ -22,9 +22,9 @@ namespace YakuzaDataTypes.MSG
 
         internal override void Write(DataWriter writer)
         {
-            writer.Write(PausePosition);
-            writer.WriteTimes(0, 2);
             writer.Write(PauseLength);
+            writer.WriteTimes(0, 2);
+            writer.Write(PausePosition);
             writer.WriteTimes(0, 8);
         }
     }

@@ -3,7 +3,7 @@ using Yarhl.IO;
 
 namespace YakuzaDataTypes.Scenario
 {
-    internal class ScenarioEvent0 : ScenarioEvent
+    internal class ScenarioEvent0 : ScenarioEventOOE
     {
         public int Unknown;
 
