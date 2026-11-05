@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace YakuzaDataTypes.PAC
+﻿namespace YakuzaDataTypes.PAC
 {
     public class PAC
     {

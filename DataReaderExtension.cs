@@ -13,7 +13,7 @@ public static class DataReaderExtension
     /// <param name="bytes"></param>
     public static void SkipAhead(this DataReader reader, int bytes)
     {
-        reader.Stream.Seek(bytes, SeekMode.Current);
+        reader.Stream.Seek(bytes, SeekOrigin.Current);
     }
 
     /// <summary>

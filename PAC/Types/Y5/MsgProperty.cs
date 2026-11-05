@@ -1,4 +1,4 @@
-[System.Serializable]
+[Serializable]
 public class MsgProperty
 {
     public ushort PropertyID;

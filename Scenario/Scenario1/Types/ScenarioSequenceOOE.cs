@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Yarhl.IO;
+﻿using Yarhl.IO;
 
 namespace YakuzaDataTypes.Scenario
 {
@@ -62,143 +59,52 @@ namespace YakuzaDataTypes.Scenario
 
         private ScenarioEventOOE ReadY3Event(DataReader reader, ushort category)
         {
-            ScenarioEventOOE sEvent = null;
-
-            switch (category)
-            {
-                default:
-                    throw new Exception($"Unknown event type: {category.ToString()} at {Name} on position: {reader.Stream.Position}");
-                case 0:
-                    sEvent = new ScenarioEvent0();
-                    break;
-                case 1:
-                    sEvent = new ScenarioEventBGM();
-                    break;
-                case 2:
-                    sEvent = new ScenarioEventSoundCuesheet();
-                    break;
-                case 3:
-                    sEvent = new ScenarioEventBattle();
-                    break;
-                case 4:
-                    sEvent = new ScenarioEventPreBattleCam();
-                    break;
-                case 5:
-                    sEvent = new ScenarioEvent5();
-                    break;
-                case 6:
-                    sEvent = new ScenarioEvent6();
-                    break;
-                case 7:
-                    sEvent = new ScenarioEventTitleCard();
-                    break;
-                case 9:
-                    sEvent = new ScenarioEvent9();
-                    break;
-                case 10:
-                    sEvent = new ScenarioEvent10();
-                    break;
-                case 11:
-                    sEvent = new ScenarioEventStage();
-                    break;
-                case 12:
-                    sEvent = new ScenarioEvent12();
-                    break;
-                case 13:
-                    sEvent = new ScenarioEvent13();
-                    break;
-                case 14:
-                    sEvent = new ScenarioEvent13();
-                    break;
-                case 15:
-                    sEvent = new ScenarioEvent15();
-                    break;
-                case 17:
-                    sEvent = new ScenarioEvent17();
-                    break;
-                case 18:
-                    sEvent = new ScenarioEventNext();
-                    break;
-                case 19:
-                    sEvent = new ScenarioEvent19();
-                    break;
-                case 20:
-                    sEvent = new ScenarioEventPIBArchive();
-                    break;
-                case 23:
-                    sEvent = new ScenarioEvent23();
-                    break;
-                case 26:
-                    sEvent = new ScenarioEvent26();
-                    break;
-                case 27:
-                    sEvent = new ScenarioEventUSM();
-                    break;
-                case 28:
-                    sEvent = new ScenarioEvent28();
-                    break;
-                case 30:
-                    sEvent = new ScenarioEvent30();
-                    break;
-                case 31:
-                    sEvent = new ScenarioEvent31();
-                    break;
-                case 32:
-                    sEvent = new ScenarioEvent32();
-                    break;
-                case 33:
-                    sEvent = new ScenarioEvent33();
-                    break;
-                case 34:
-                    sEvent = new ScenarioEvent34();
-                    break;
-                case 35:
-                    sEvent = new ScenarioEvent35();
-                    break;
-                case 36:
-                    sEvent = new ScenarioEvent36();
-                    break;
-                case 37:
-                    sEvent = new ScenarioEventHAct();
-                    break;
-                case 38:
-                    sEvent = new ScenarioEvent38();
-                    break;
-                case 39:
-                    sEvent = new ScenarioEvent39();
-                    break;
-                case 40:
-                    sEvent = new ScenarioEvent40();
-                    break;
-                case 41:
-                    sEvent = new ScenarioEvent41();
-                    break;
-                case 42:
-                    sEvent = new ScenarioEvent42();
-                    break;
-                case 43:
-                    sEvent = new ScenarioEvent43();
-                    break;
-                case 45:
-                    sEvent = new ScenarioEvent45();
-                    break;
-                case 46:
-                    sEvent = new ScenarioEvent46();
-                    break;
-                case 47:
-                    sEvent = new ScenarioEvent47();
-                    break;
-                case 48:
-                    sEvent = new ScenarioEvent48();
-                    break;
-                case 49:
-                    sEvent = new ScenarioEvent49();
-                    break;
-
-                case 50:
-                    sEvent = new ScenarioEvent50();
-                    break;
-            }
+            ScenarioEventOOE sEvent = category switch {
+                0 => new ScenarioEvent0(),
+                1 => new ScenarioEventBGM(),
+                2 => new ScenarioEventSoundCuesheet(),
+                3 => new ScenarioEventBattle(),
+                4 => new ScenarioEventPreBattleCam(),
+                5 => new ScenarioEvent5(),
+                6 => new ScenarioEvent6(),
+                7 => new ScenarioEventTitleCard(),
+                9 => new ScenarioEvent9(),
+                10 => new ScenarioEvent10(),
+                11 => new ScenarioEventStage(),
+                12 => new ScenarioEvent12(),
+                13 => new ScenarioEvent13(),
+                14 => new ScenarioEvent13(),
+                15 => new ScenarioEvent15(),
+                17 => new ScenarioEvent17(),
+                18 => new ScenarioEventNext(),
+                19 => new ScenarioEvent19(),
+                20 => new ScenarioEventPIBArchive(),
+                23 => new ScenarioEvent23(),
+                26 => new ScenarioEvent26(),
+                27 => new ScenarioEventUSM(),
+                28 => new ScenarioEvent28(),
+                30 => new ScenarioEvent30(),
+                31 => new ScenarioEvent31(),
+                32 => new ScenarioEvent32(),
+                33 => new ScenarioEvent33(),
+                34 => new ScenarioEvent34(),
+                35 => new ScenarioEvent35(),
+                36 => new ScenarioEvent36(),
+                37 => new ScenarioEventHAct(),
+                38 => new ScenarioEvent38(),
+                39 => new ScenarioEvent39(),
+                40 => new ScenarioEvent40(),
+                41 => new ScenarioEvent41(),
+                42 => new ScenarioEvent42(),
+                43 => new ScenarioEvent43(),
+                45 => new ScenarioEvent45(),
+                46 => new ScenarioEvent46(),
+                47 => new ScenarioEvent47(),
+                48 => new ScenarioEvent48(),
+                49 => new ScenarioEvent49(),
+                50 => new ScenarioEvent50(),
+                _ => throw new Exception($"Unknown event type: {category.ToString()} at {Name} on position: {reader.Stream.Position}")
+            };
 
             sEvent.ReadData(reader);
             return sEvent;
@@ -206,157 +112,57 @@ namespace YakuzaDataTypes.Scenario
 
         private ScenarioEventOOE ReadY4Event(DataReader reader, ushort category)
         {
-            ScenarioEventOOE sEvent = null;
-
-            switch (category)
-            {
-                default:
-                    throw new Exception($"Unknown event type: {category.ToString()} at {Name} on position: {reader.Stream.Position}");
-                case 0:
-                    sEvent = new ScenarioEventAuthUSM();
-                    break;
-                case 1:
-                    sEvent = new ScenarioEventBGM();
-                    break;
-                case 3:
-                    sEvent = new ScenarioEventBattle();
-                    break;
-                case 4:
-                    sEvent = new ScenarioEventPreBattleCam();
-                    break;
-                case 5:
-                    sEvent = new ScenarioEvent5();
-                    break;
-                case 6:
-                    sEvent = new ScenarioEvent6();
-                    break;
-                case 7:
-                    sEvent = new ScenarioEventTitleCard();
-                    break;
-                case 9:
-                    sEvent = new ScenarioEvent9();
-                    break;
-                case 10:
-                    sEvent = new ScenarioEvent10();
-                    break;
-                case 11:
-                    sEvent = new ScenarioEventStage();
-                    break;
-                case 12:
-                    sEvent = new ScenarioEvent12();
-                    break;
-                case 13:
-                    sEvent = new ScenarioEvent13();
-                    break;
-                case 14:
-                    sEvent = new ScenarioEvent14();
-                    break;
-                case 15:
-                    sEvent = new ScenarioEvent15Y4();
-                    break;
-                case 17:
-                    sEvent = new ScenarioEvent17();
-                    break;
-                case 18:
-                    sEvent = new ScenarioEventNext();
-                    break;
-                case 19:
-                    sEvent = new ScenarioEvent19();
-                    break;
-                case 20:
-                    sEvent = new ScenarioEventPIBArchive();
-                    break;
-                case 23:
-                    sEvent = new ScenarioEvent23();
-                    break;
-                case 24:
-                    sEvent = new ScenarioEvent24();
-                    break;
-                case 25:
-                    sEvent = new ScenarioEvent25();
-                    break;
-                case 26:
-                    sEvent = new ScenarioEvent26();
-                    break;
-                case 27:
-                    sEvent = new ScenarioEventUSM();
-                    break;
-                case 28:
-                    sEvent = new ScenarioEvent28();
-                    break;
-                case 30:
-                    sEvent = new ScenarioEvent30();
-                    break;
-                case 32:
-                    sEvent = new ScenarioEvent32();
-                    break;
-                case 34:
-                    sEvent = new ScenarioEvent34();
-                    break;
-                case 35:
-                    sEvent = new ScenarioEvent35();
-                    break;
-                case 37:
-                    sEvent = new ScenarioEventHActY4();
-                    break;
-                case 38:
-                    sEvent = new ScenarioEvent38();
-                    break;
-                case 39:
-                    sEvent = new ScenarioEvent39();
-                    break;
-                case 40:
-                    sEvent = new ScenarioEvent40();
-                    break;
-                case 41:
-                    sEvent = new ScenarioEvent41();
-                    break;
-                case 42:
-                    sEvent = new ScenarioEvent42Y4();
-                    break;
-                case 43:
-                    sEvent = new ScenarioEvent43Y4();
-                    break;
-                case 45:
-                    sEvent = new ScenarioEvent45();
-                    break;
-                case 46:
-                    sEvent = new ScenarioEvent46();
-                    break;
-                case 47:
-                    sEvent = new ScenarioEvent47();
-                    break;
-                case 48:
-                    sEvent = new ScenarioEvent48();
-                    break;
-                case 49:
-                    sEvent = new ScenarioEvent49();
-                    break;
-                case 50:
-                    sEvent = new ScenarioEvent50();
-                    break;
-                case 51:
-                    sEvent = new ScenarioEvent51();
-                    break;
-                case 52:
-                    sEvent = new ScenarioEvent52();
-                    break;
-                case 53:
-                    sEvent = new ScenarioEvent53();
-                    break;
-                case 54:
-                    sEvent = new ScenarioEvent54();
-                    break;
-                case 55:
-                    sEvent = new ScenarioEvent55();
-                    break;
-                case 56:
-                    sEvent = new ScenarioEvent56();
-                    break;
-                case 59:
-                    sEvent = new ScenarioEvent59();
-                    break;
-            }
+            ScenarioEventOOE sEvent = category switch {
+                0 => new ScenarioEventAuthUSM(),
+                1 => new ScenarioEventBGM(),
+                3 => new ScenarioEventBattle(),
+                4 => new ScenarioEventPreBattleCam(),
+                5 => new ScenarioEvent5(),
+                6 => new ScenarioEvent6(),
+                7 => new ScenarioEventTitleCard(),
+                9 => new ScenarioEvent9(),
+                10 => new ScenarioEvent10(),
+                11 => new ScenarioEventStage(),
+                12 => new ScenarioEvent12(),
+                13 => new ScenarioEvent13(),
+                14 => new ScenarioEvent14(),
+                15 => new ScenarioEvent15Y4(),
+                17 => new ScenarioEvent17(),
+                18 => new ScenarioEventNext(),
+                19 => new ScenarioEvent19(),
+                20 => new ScenarioEventPIBArchive(),
+                23 => new ScenarioEvent23(),
+                24 => new ScenarioEvent24(),
+                25 => new ScenarioEvent25(),
+                26 => new ScenarioEvent26(),
+                27 => new ScenarioEventUSM(),
+                28 => new ScenarioEvent28(),
+                30 => new ScenarioEvent30(),
+                32 => new ScenarioEvent32(),
+                34 => new ScenarioEvent34(),
+                35 => new ScenarioEvent35(),
+                37 => new ScenarioEventHActY4(),
+                38 => new ScenarioEvent38(),
+                39 => new ScenarioEvent39(),
+                40 => new ScenarioEvent40(),
+                41 => new ScenarioEvent41(),
+                42 => new ScenarioEvent42Y4(),
+                43 => new ScenarioEvent43Y4(),
+                45 => new ScenarioEvent45(),
+                46 => new ScenarioEvent46(),
+                47 => new ScenarioEvent47(),
+                48 => new ScenarioEvent48(),
+                49 => new ScenarioEvent49(),
+                50 => new ScenarioEvent50(),
+                51 => new ScenarioEvent51(),
+                52 => new ScenarioEvent52(),
+                53 => new ScenarioEvent53(),
+                54 => new ScenarioEvent54(),
+                55 => new ScenarioEvent55(),
+                56 => new ScenarioEvent56(),
+                59 => new ScenarioEvent59(),
+                _ => throw new Exception($"Unknown event type: {category.ToString()} at {Name} on position: {reader.Stream.Position}")
+            };
 
             sEvent.ReadData(reader);
             return sEvent;

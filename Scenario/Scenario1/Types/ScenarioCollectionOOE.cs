@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Yarhl.IO;
+﻿using Yarhl.IO;
 
 namespace YakuzaDataTypes.Scenario
 {
@@ -26,7 +23,11 @@ namespace YakuzaDataTypes.Scenario
                 ScenarioSequenceGroupOOE group = new ScenarioSequenceGroupOOE();
                 group.Name = reader.ReadStringPointer();
 
-                SizedPointer sequencesPtr = reader.Read<SizedPointer>();
+                SizedPointer sequencesPtr = new SizedPointer
+                {
+                    Pointer = reader.ReadInt32(),
+                    Size = reader.ReadInt32()
+                };
 
                 group.Unknown1 = reader.ReadInt32();
                 group.Unknown2 = reader.ReadInt32();

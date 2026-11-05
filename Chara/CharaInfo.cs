@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 using Yarhl.IO;
 
 namespace YakuzaDataTypes.Chara
@@ -58,7 +52,7 @@ namespace YakuzaDataTypes.Chara
             {
                 int val2 = 0;
 
-                reader.Stream.RunInPosition(delegate { val2 = reader.ReadInt32(); }, 0x1C, SeekMode.Current);
+                reader.Stream.RunInPosition(delegate { val2 = reader.ReadInt32(); }, 0x1C, SeekOrigin.Current);
 
                 if (val2 == 0)
                     common.Version = CharaInfoVersion.DeadSouls;
@@ -79,7 +73,7 @@ namespace YakuzaDataTypes.Chara
 
             for (int i = 0; i < modelCount; i++)
             {
-                PXDHash hash = reader.ReadByType(typeof(PXDHash));
+                PXDHash hash = (PXDHash)reader.ReadByType(typeof(PXDHash));
                 models[i] = hash;
             }
 
@@ -148,7 +142,7 @@ namespace YakuzaDataTypes.Chara
             long modelCountAddr = writer.Stream.Position;
             writer.Write(0); //we will return to this later
             writer.Write((int)(info.Version + 1)); //if not zero this means it was written with this library, we can easy detect version
-            writer.Write(new byte[] { 0x4A, 0x48, 0x52, 0x0 });
+            writer.Write("JHR\0"u8.ToArray());
 
 
             long charactersStart = writer.Stream.Position;

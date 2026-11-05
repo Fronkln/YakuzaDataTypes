@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 using Yarhl.IO;
 
 namespace YakuzaDataTypes.MSG
@@ -27,7 +23,7 @@ namespace YakuzaDataTypes.MSG
         public static MsgOOE Read(byte[] buffer)
         {
             DataStream readStream = DataStreamFactory.FromArray(buffer, 0, buffer.Length);
-            DataReader reader = new DataReader(readStream) { Endianness = EndiannessMode.BigEndian, DefaultEncoding = System.Text.Encoding.UTF8 };
+            DataReader reader = new DataReader(readStream) { Endianness = EndiannessMode.BigEndian, DefaultEncoding = Encoding.UTF8 };
 
             MsgOOE msg = new MsgOOE();
 
@@ -48,7 +44,7 @@ namespace YakuzaDataTypes.MSG
             int groupsPointer = reader.ReadInt32();
             short groupsCount = reader.ReadInt16();
 
-            string[] strings = new string[0];
+            string[] strings = [];
 
             reader.Stream.RunInPosition(delegate { strings = ReadStringTable(reader, stringsCount); }, stringTablePointer);
             reader.Stream.RunInPosition(delegate { msg.Coordinates = ReadCoordinates(reader, coordinatesCount); }, coordinatesPtr);
@@ -143,10 +139,8 @@ namespace YakuzaDataTypes.MSG
 
             long coordinatesPosition = writer.Stream.Position;
 
-            for(int i = 0; i < msg.Coordinates.Count; i++)
+            foreach (var coordinate in msg.Coordinates)
             {
-                var coordinate = msg.Coordinates[i];
-
                 writer.Write(coordinate.Position.x);
                 writer.Write(coordinate.Position.y);
                 writer.Write(coordinate.Position.z);

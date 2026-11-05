@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Yarhl.IO.Serialization.Attributes;
+﻿using Yarhl.IO.Serialization.Attributes;
 
 namespace YakuzaDataTypes
 {
-    [Yarhl.IO.Serialization.Attributes.Serializable]
     public class PXDHash
     {
         public ushort Checksum { get; private set; } = 0;
         private string _Text = "";
 
         [BinaryString(FixedSize = 30, MaxSize = 30)]
-        public string Text { get { return _Text.Split(new[] { '\0' }, 2)[0]; } set { Set(value); } }
+        public string Text { get { return _Text.Split('\0', 2)[0]; } set { Set(value); } }
 
         public void Set(string text)
         {

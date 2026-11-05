@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
-using Yarhl.IO;
+﻿using Yarhl.IO;
 
 namespace YakuzaDataTypes
 {
@@ -34,7 +28,7 @@ namespace YakuzaDataTypes
             m_writer.Stream.RunInPosition(delegate
             {
                 strStart = m_writer.Stream.Position;
-                m_writer.Write(str, true);
+                m_writer.Write(str);
                 table[str] = strStart;
 
                 Position = m_writer.Stream.Position;
@@ -59,13 +53,13 @@ namespace YakuzaDataTypes
                 for(int i = 0; i < count; i++)
                 {
                     int addr = pointers[i];
-                    reader.Stream.Seek(addr, SeekMode.Start);
+                    reader.Stream.Seek(addr);
                     string str = reader.ReadString();
 
                     strings[i] = str;
          
                 }
-            }, position, SeekMode.Start);
+            }, position);
 
             return strings;
         }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
-using Yarhl.IO;
+﻿using Yarhl.IO;
 
 namespace YakuzaDataTypes.MSG
 {
@@ -47,8 +41,7 @@ namespace YakuzaDataTypes.MSG
 
             return (short)(Table.Count - 1);
         }
-
-
+        
         public static string[] Read(DataReader reader, long position, int count)
         {
             string[] strings = new string[count];
@@ -63,13 +56,13 @@ namespace YakuzaDataTypes.MSG
                 for(int i = 0; i < count; i++)
                 {
                     int addr = pointers[i];
-                    reader.Stream.Seek(addr, SeekMode.Start);
+                    reader.Stream.Seek(addr);
                     string str = reader.ReadString();
 
                     strings[i] = str;
          
                 }
-            }, position, SeekMode.Start);
+            }, position);
 
             return strings;
         }

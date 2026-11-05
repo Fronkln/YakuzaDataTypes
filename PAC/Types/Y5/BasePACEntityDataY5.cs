@@ -1,4 +1,3 @@
-using System;
 using Yarhl.IO;
 
 namespace YakuzaDataTypes.PAC
@@ -25,7 +24,7 @@ namespace YakuzaDataTypes.PAC
 
         public static BasePACEntityDataY5 Read(DataReader reader, byte propertyType, int size)
         {
-            BasePACEntityDataY5 data = null;
+            BasePACEntityDataY5 data;
 
             switch (propertyType)
             {
@@ -49,7 +48,7 @@ namespace YakuzaDataTypes.PAC
             if (postReadPos < dataEnd)
                 data.UnreadData = reader.ReadBytes((int)(dataEnd - postReadPos));
             else if (postReadPos > dataEnd)
-                throw new System.Exception("Overread");
+                throw new Exception("Overread");
 
 
             return data;

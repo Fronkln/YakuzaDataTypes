@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
+﻿using System.Text;
 using Yarhl.IO;
 
 namespace YakuzaDataTypes.PAC
@@ -28,7 +22,7 @@ namespace YakuzaDataTypes.PAC
             int nodesStart = m_reader.ReadInt32();
 
             if (fileType != 0)
-                throw new System.Exception("Cant read pac type " + fileType);
+                throw new Exception("Cant read pac type " + fileType);
 
             var pacEntities = new PACEntityY5[nodeCount];
             Y5PacNodeHeader[] nodeHeaders = new Y5PacNodeHeader[nodeCount];
@@ -54,7 +48,7 @@ namespace YakuzaDataTypes.PAC
                 m_reader.Stream.Position = header.EntityDataPtr;
 
                 int totalData2Count = 0;
-                m_reader.Stream.RunInPosition(delegate { totalData2Count = m_reader.ReadByte(); }, 14, SeekMode.Current);
+                m_reader.Stream.RunInPosition(delegate { totalData2Count = m_reader.ReadByte(); }, 14, SeekOrigin.Current);
                 int sizePerData = header.Data2Size / totalData2Count;
 
 
@@ -227,7 +221,7 @@ namespace YakuzaDataTypes.PAC
                     pacEntities[i] = entity;
                 }
 
-                m_reader.Stream.Seek(nodesStart, SeekMode.Start);
+                m_reader.Stream.Seek(nodesStart);
 
             }
 

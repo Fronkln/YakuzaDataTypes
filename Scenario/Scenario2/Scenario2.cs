@@ -1,13 +1,5 @@
-﻿using System;
-using System.IO;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using YakuzaDataTypes.Scenario;
+﻿using System.Text;
 using Yarhl.IO;
-using System.CodeDom;
-using System.Diagnostics;
 
 namespace YakuzaDataTypes.Scenario
 {
@@ -26,9 +18,7 @@ namespace YakuzaDataTypes.Scenario
                     if (seq.GetSequenceType() != 4)
                         continue;
 
-                    var branch = seq as BranchSequence;
-                    
-                    if (branch != null)
+                    if (seq is BranchSequence branch)
                         branches.Add(branch);
                 }
             }
@@ -303,19 +293,17 @@ namespace YakuzaDataTypes.Scenario
                 if (kv.Value <= 0)
                     continue;
 
-                if (!(kv.Key is ChapterSequence))
+                if (kv.Key is not ChapterSequence cSeq)
                 {
                     var seq = sequenceLocations[kv.Value];
-                    var chapter = seq as ChapterSequence;
 
-                    if (chapter != null)
+                    if (seq is ChapterSequence chapter)
                         chapter.Sequences.Add(kv.Key);
                     else
-                        ((seq as BranchSequence)).BranchSequences.Add(kv.Key as MissionSequence);
+                        (seq as BranchSequence).BranchSequences.Add(kv.Key as MissionSequence);
                 }
                 else
                 {
-                    var cSeq = (ChapterSequence)kv.Key;
                     cSeq.NextChapterID = sequenceLocations[kv.Value].ID;
                 }
             }
@@ -440,9 +428,7 @@ namespace YakuzaDataTypes.Scenario
             {
                 foreach (var seq in cSeq.Sequences)
                 {
-                    var mission = seq as MissionSequence;
-
-                    if (mission == null)
+                    if (seq is not MissionSequence mission)
                         continue;
 
                     statePropertiesLocations[mission] = new int[mission.Properties.Length];
@@ -524,10 +510,8 @@ namespace YakuzaDataTypes.Scenario
             {
                 foreach (var seq in cSeq.Sequences)
                 {
-                    var mission = seq as MissionSequence;
-
                     //Means its a branch, it will be written afte rmissions are written
-                    if (mission == null)
+                    if (seq is not MissionSequence mission)
                         continue;
 
                     accessPtrs[mission] = mission.AccessingNodes.Count > 0 ? writer.Stream.Position : 0;
@@ -547,9 +531,7 @@ namespace YakuzaDataTypes.Scenario
             {
                 foreach (var seq in cSeq.Sequences)
                 {
-                    var mission = seq as MissionSequence;
-
-                    if(mission != null)
+                    if(seq is MissionSequence mission)
                     {
                         writer.Stream.Position = scenarioSettingsLocations[mission];
                         writer.Write(missionSettingsLocations[mission]);
@@ -595,9 +577,9 @@ namespace YakuzaDataTypes.Scenario
                 if (cSeq.FollowupID < 0)
                     writer.Write(0);
                 else
-                    writer.Write((int)sequencesLocations.Where(x => x.Key.ID == cSeq.FollowupID).First().Value);
+                    writer.Write((int)sequencesLocations.First(x => x.Key.ID == cSeq.FollowupID).Value);
 
-                int nextChapterPtr = (int)sequencesLocations.Where(x => x.Key.ID == cSeq.NextChapterID).First().Value;
+                int nextChapterPtr = (int)sequencesLocations.First(x => x.Key.ID == cSeq.NextChapterID).Value;
                 writer.Write(nextChapterPtr);
                 writer.Write(0);
                 writer.Write(cSeq.ID);
@@ -613,10 +595,8 @@ namespace YakuzaDataTypes.Scenario
                 {
                     writer.Write(seq.GetSequenceType());
                     writer.Write((int)scenarioSettingsLocations[seq]);
-            
-                    var mission = seq as MissionSequence;
 
-                    if(mission != null)
+                    if(seq is MissionSequence mission)
                     {
                         writer.Write(0);
 
@@ -626,7 +606,7 @@ namespace YakuzaDataTypes.Scenario
                             followUpPtr = 0;
                         else
                         {
-                            var followUpObj = sequencesLocations.Where(x => x.Key.ID == mission.FollowupID).FirstOrDefault();
+                            var followUpObj = sequencesLocations.FirstOrDefault(x => x.Key.ID == mission.FollowupID);
 
                             if (followUpObj.Key != null)
                                 followUpPtr = (int)followUpObj.Value;
@@ -634,7 +614,7 @@ namespace YakuzaDataTypes.Scenario
                                 followUpPtr = 0;
                         }
 
-                        int chapterPtr = (int)sequencesLocations.Where(x => x.Key.ID == cSeq.ID).First().Value;
+                        int chapterPtr = (int)sequencesLocations.First(x => x.Key.ID == cSeq.ID).Value;
 
                         writer.Write(followUpPtr);
                         writer.Write(chapterPtr);

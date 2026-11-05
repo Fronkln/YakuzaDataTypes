@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace YakuzaDataTypes.Chara
+﻿namespace YakuzaDataTypes.Chara
 {
     public class CharaInfoEntryKenzan : CharaInfoEntry
     {

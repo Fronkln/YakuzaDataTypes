@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 using Yarhl.IO;
 
 namespace YakuzaDataTypes
@@ -15,7 +11,7 @@ namespace YakuzaDataTypes
             stream.Position = 0;
 
             byte[] buf = new byte[stream.Length];
-            stream.Read(buf, 0, buf.Length);
+            stream.ReadExactly(buf, 0, buf.Length);
 
             stream.Position = pos;
 

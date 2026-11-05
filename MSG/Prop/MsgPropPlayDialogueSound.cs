@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Yarhl.IO;
+﻿using Yarhl.IO;
 
 namespace YakuzaDataTypes.MSG
 {
@@ -31,7 +26,7 @@ namespace YakuzaDataTypes.MSG
 
         internal override List<string> GetStrings()
         {
-            return new List<string>() { Sound };
+            return [Sound];
         }
     }
 }

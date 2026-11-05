@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
-[System.Serializable]
+[Serializable]
 public class PACRef
 {
     public short TextToggle;
