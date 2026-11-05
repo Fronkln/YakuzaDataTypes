@@ -1,9 +1,6 @@
-﻿using System;
-using Yarhl.IO;
+﻿using Yarhl.IO;
 using Yarhl.FileFormat;
 using System.Text;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace YakuzaDataTypes.Scenario
 {
@@ -162,7 +159,13 @@ namespace YakuzaDataTypes.Scenario
 
                 int eventsEnd = (int)writer.Stream.Position;
 
-                writer.Stream.RunInPosition(delegate { if (sequence.Events.Count > 0) writer.Write(eventsStart); writer.Write((eventsEnd - eventsStart) / 4); }, kv.Value + 20);
+                writer.Stream.RunInPosition(delegate 
+                {
+                    if (sequence.Events.Count > 0)
+                        writer.Write(eventsStart);
+                    
+                    writer.Write((eventsEnd - eventsStart) / 4);
+                }, kv.Value + 20);
             }
 
             if(scenario.Version == ScenarioVersion.Y4)
@@ -226,8 +229,8 @@ namespace YakuzaDataTypes.Scenario
             if (string.IsNullOrEmpty(value))
                 return 0;
 
-            if (m_stringTable.ContainsKey(value))
-                return m_stringTable[value];
+            if (m_stringTable.TryGetValue(value, out var str))
+                return str;
 
             int valStart = 0;
 
@@ -236,7 +239,7 @@ namespace YakuzaDataTypes.Scenario
                 valStart = (int)m_writer.Stream.Position;
                 m_stringTable[value] = valStart;
 
-                m_writer.Write(value, true, UTF8Encoding.UTF8);
+                m_writer.Write(value, true, Encoding.UTF8);
 
                 m_stringTablePosition = m_writer.Stream.Position;
 

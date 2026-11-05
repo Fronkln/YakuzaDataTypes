@@ -1,4 +1,4 @@
-[System.Serializable]
+[Serializable]
 public class PACConditionChunkY5 
 {
     public int Type;

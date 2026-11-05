@@ -19,7 +19,6 @@ namespace YakuzaDataTypes.MSG
                 Unk1 = reader.ReadInt32();
                 CoordinateID = reader.ReadInt32();
                 Unk2 = reader.ReadInt16();
-                EntityUID = reader.ReadInt32();
             }
             else
             {
@@ -28,8 +27,9 @@ namespace YakuzaDataTypes.MSG
                 OEUnk = reader.ReadByte();
                 Unk2 = reader.ReadInt16();
                 OEUnk2 = reader.ReadInt32();
-                EntityUID = reader.ReadInt32();
             }
+
+            EntityUID = reader.ReadInt32();
         }
 
         internal override void WriteData(MsgGroup parentGroup, MsgEvent parentEvent, DataWriter writer, bool isOE)
@@ -39,7 +39,6 @@ namespace YakuzaDataTypes.MSG
                 writer.Write(Unk1);
                 writer.Write(CoordinateID);
                 writer.Write(Unk2);
-                writer.Write(EntityUID);
             }
             else
             {
@@ -48,8 +47,9 @@ namespace YakuzaDataTypes.MSG
                 writer.Write(OEUnk);
                 writer.Write(Unk2);
                 writer.Write(OEUnk2);
-                writer.Write(EntityUID);
             }
+
+            writer.Write(EntityUID);
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using Yarhl.IO;
+﻿using Yarhl.IO;
 
 namespace YakuzaDataTypes.Scenario
 {

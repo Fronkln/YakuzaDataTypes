@@ -1,6 +1,6 @@
 namespace YakuzaDataTypes.PAC
 {
-    [System.Serializable]
+    [Serializable]
     public class PACEntityY5
     {
         public PACEntityTypeY5 Type;

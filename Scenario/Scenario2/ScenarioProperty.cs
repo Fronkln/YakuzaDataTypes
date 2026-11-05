@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Yarhl.IO;
+﻿using Yarhl.IO;
 
 namespace YakuzaDataTypes.Scenario
 {
@@ -19,7 +14,7 @@ namespace YakuzaDataTypes.Scenario
 
             short category = reader.ReadInt16();
 
-            ScenarioProperty prop = null;
+            ScenarioProperty prop;
 
             switch ((ScenarioPropertyTypeOE)category)
             {
@@ -60,13 +55,13 @@ namespace YakuzaDataTypes.Scenario
                     break;
 
                 case ScenarioPropertyTypeOE.Unknown9:
-                    prop = new ScenarioPropertyUnknown() { UnreadData = new int[1] { reader.ReadInt32() } };
+                    prop = new ScenarioPropertyUnknown() { UnreadData = [reader.ReadInt32()] };
                     break;
                 case (ScenarioPropertyTypeOE)18:
-                    prop = new ScenarioPropertyUnknown() { UnreadData = new int[1]{ 0xBEEF }, UnknownStrings = new List<string>() { reader.ReadStringPointer() }, UnknownStringIndices = new List<int>() { 0 } };
+                    prop = new ScenarioPropertyUnknown() { UnreadData = [0xBEEF], UnknownStrings = [reader.ReadStringPointer()], UnknownStringIndices = [0] };
                     break;
                 case (ScenarioPropertyTypeOE)20:
-                    prop = new ScenarioPropertyUnknown() { UnreadData = new int[1] { reader.ReadInt32() } };
+                    prop = new ScenarioPropertyUnknown() { UnreadData = [reader.ReadInt32()] };
                     break;
                 case ScenarioPropertyTypeOE.USM:
                     prop = new ScenarioPropertyUSM();
@@ -78,7 +73,7 @@ namespace YakuzaDataTypes.Scenario
                     prop = new ScenarioPropertyFollowup();
                     break;
                 case (ScenarioPropertyTypeOE)36:
-                    prop = new ScenarioPropertyUnknown() { UnreadData = new int[1] { reader.ReadInt32() } };
+                    prop = new ScenarioPropertyUnknown() { UnreadData = [reader.ReadInt32()] };
                     break;
                 case ScenarioPropertyTypeOE.PIBArchive:
                     prop = new ScenarioPropertyPIBArchive();

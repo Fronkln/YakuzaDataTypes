@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Security.Policy;
-
-namespace YakuzaDataTypes.Scenario
+﻿namespace YakuzaDataTypes.Scenario
 {
     public class MissionSequence : BaseSequence
     {

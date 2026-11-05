@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Xml;
+﻿using System.Text;
 using Yarhl.IO;
 
 namespace YakuzaDataTypes.MSG
@@ -70,7 +64,7 @@ namespace YakuzaDataTypes.MSG
 
             string[] strings = StringTable.Read(reader, strPointer, strCount);
 
-            reader.Stream.Seek(pointerUnkSector, SeekMode.Start);
+            reader.Stream.Seek(pointerUnkSector);
             msg.UnkSection = reader.ReadBytes((int)(reader.Stream.Length - reader.Stream.Position));
 
             reader.Stream.Seek(groupsPtr);
@@ -103,16 +97,14 @@ namespace YakuzaDataTypes.MSG
                         //Strlen is misleading, it didnt read the morning glory line fully on c06fe Y5, really odd.
                         //So im just gonna read it until the end with no fixed length
                         if (strLen != 0)
-                            reader.Stream.RunInPosition(delegate { mEvent.Value = reader.ReadString(); }, strOffset, SeekMode.Start);
+                            reader.Stream.RunInPosition(delegate { mEvent.Value = reader.ReadString(); }, strOffset);
 
-                        Type propEnumType = null;
-
-                        if (game == Game.Y0)
-                            propEnumType = typeof(MsgPropTypeY0);
-                        else if (game == Game.Y5)
-                            propEnumType = typeof(MsgPropTypeY5);
-                        else
-                            propEnumType = typeof(MsgPropTypeUnknown);
+                        Type propEnumType = game switch
+                        {
+                            Game.Y0 => typeof(MsgPropTypeY0),
+                            Game.Y5 => typeof(MsgPropTypeY5),
+                            _ => typeof(MsgPropTypeUnknown)
+                        };
 
                         if (propCount != 0)
                         {
@@ -130,105 +122,41 @@ namespace YakuzaDataTypes.MSG
 
                                     if(name != null)
                                     {
-                                        switch (name)
+                                        msgProp = name switch
                                         {
-                                            case "Start":
-                                                msgProp = new MsgPropStart();
-                                                break;
-                                            case "DialogueSettings":
-                                                msgProp = new MsgPropDialogueSettings();
-                                                break;
-                                            case "Choice":
-                                                msgProp = new MsgPropChoice();
-                                                break;
-                                            case "ScenarioBranching":
-                                                msgProp = new MsgPropScenarioBranching();
-                                                break;
-                                            case "ChoiceBranching":
-                                                msgProp = new MsgPropBranching();
-                                                break;
-                                            case "ChoiceBranching2":
-                                                msgProp = new MsgPropBranching();
-                                                break;
-                                            case "UnknownBranching":
-                                                msgProp = new MsgPropBranching();
-                                                break;
-                                            case "SpeechPause":
-                                                msgProp = new MsgPropSpeechPause();
-                                                break;
-                                            case "SetSpeaker":
-                                                msgProp = new MsgPropSetSpeaker();
-                                                break;
-                                            case "SetWindowType":
-                                                msgProp = new MsgPropSetWindowType();
-                                                break;
-                                            case "UnknownPropWithString1":
-                                                msgProp = new MsgPropUnknownPropWString();
-                                                break;
-                                            case "PlayHAct":
-                                                msgProp = new MsgPropPlayHAct();
-                                                break;
-                                            case "UnknownPropWithString2":
-                                                msgProp = new MsgPropUnknownPropWString2();
-                                                break;
-                                            case "PlayActionSetAnimation":
-                                                msgProp = new MsgPropPlayActionSetAnimation();
-                                                break;
-                                            case "PlayAnimationLoop":
-                                                msgProp = new MsgPropPlayAnimationLoop();
-                                                break;
-                                            case "SetIdleAnimation":
-                                                msgProp = new MsgPropSetIdleAnimation();
-                                                break;
-                                            case "SetVisibility":
-                                                msgProp = new MsgPropSetVisibility();
-                                                break;
-                                            case "PlayAnimation":
-                                            case "PlayAnimationRelated":
-                                                msgProp = new MsgPropPlayAnimation();
-                                                break;
-                                            case "MoveToEntity":
-                                                msgProp = new MsgPropMoveToEntity();
-                                                break;
-                                            case "FaceEntity":
-                                                msgProp = new MsgPropFaceEntity();
-                                                break;
-                                            case "Reactor":
-                                                msgProp = new MsgPropReactor();
-                                                break;
-                                            case "FaceExpression":
-                                                msgProp = new MsgPropFaceExpression();
-                                                break;
-                                            case "CameraParam":
-                                                msgProp = new MsgPropCameraParam();
-                                                break;
-                                            case "TeleportToEntity":
-                                                msgProp = new MsgPropTeleportToEntity();
-                                                break;
-                                            case "TeleportToMsgCoordinate":
-                                                msgProp = new MsgPropTeleportToCoordinate();
-                                                break;
-                                            case "ScreenFadeIn":
-                                                msgProp = new MsgPropScreenFadeIn();
-                                                break;
-                                            case "ScreenFadeOut":
-                                                msgProp = new MsgPropScreenFadeOut();
-                                                break;
-                                            case "PlayBgm":
-                                                msgProp = new MsgPropPlayBGM();
-                                                break;
-                                            case "PlayDialogueSound":
-                                                msgProp = new MsgPropPlayDialogueSound();
-                                                break;
-                                            case "CharacterSpeech":
-                                                msgProp = new MsgPropCharacterSpeech();
-                                                break;
-
-                                        }
+                                            "Start" => new MsgPropStart(),
+                                            "DialogueSettings" => new MsgPropDialogueSettings(),
+                                            "Choice" => new MsgPropChoice(),
+                                            "ScenarioBranching" => new MsgPropScenarioBranching(),
+                                            "ChoiceBranching" or "ChoiceBranching2" or "UnknownBranching" => new MsgPropBranching(),
+                                            "SpeechPause" => new MsgPropSpeechPause(),
+                                            "SetSpeaker" => new MsgPropSetSpeaker(),
+                                            "SetWindowType" => new MsgPropSetWindowType(),
+                                            "UnknownPropWithString1" => new MsgPropUnknownPropWString(),
+                                            "PlayHAct" => new MsgPropPlayHAct(),
+                                            "UnknownPropWithString2" => new MsgPropUnknownPropWString2(),
+                                            "PlayActionSetAnimation" => new MsgPropPlayActionSetAnimation(),
+                                            "PlayAnimationLoop" => new MsgPropPlayAnimationLoop(),
+                                            "SetIdleAnimation" => new MsgPropSetIdleAnimation(),
+                                            "SetVisibility" => new MsgPropSetVisibility(),
+                                            "PlayAnimation" or "PlayAnimationRelated" => new MsgPropPlayAnimation(),
+                                            "MoveToEntity" => new MsgPropMoveToEntity(),
+                                            "FaceEntity" => new MsgPropFaceEntity(),
+                                            "Reactor" => new MsgPropReactor(),
+                                            "FaceExpression" => new MsgPropFaceExpression(),
+                                            "CameraParam" => new MsgPropCameraParam(),
+                                            "TeleportToEntity" => new MsgPropTeleportToEntity(),
+                                            "TeleportToMsgCoordinate" => new MsgPropTeleportToCoordinate(),
+                                            "ScreenFadeIn" => new MsgPropScreenFadeIn(),
+                                            "ScreenFadeOut" => new MsgPropScreenFadeOut(),
+                                            "PlayBgm" => new MsgPropPlayBGM(),
+                                            "PlayDialogueSound" => new MsgPropPlayDialogueSound(),
+                                            "CharacterSpeech" => new MsgPropCharacterSpeech(),
+                                            _ => msgProp
+                                        };
                                     }
 
-                                    if (msgProp == null)
-                                        msgProp = new MsgProp();
+                                    msgProp ??= new MsgProp();
 
                                     msgProp.PropType = type;
 
@@ -251,7 +179,7 @@ namespace YakuzaDataTypes.MSG
 
                         group.Events.Add(mEvent);
                     }
-                }, offset, SeekMode.Start);
+                }, offset);
 
                 msg.Groups.Add(group);
             }
@@ -343,7 +271,7 @@ namespace YakuzaDataTypes.MSG
                         writer.Write((int)propertiesPtr[mEvent]);
                     }
 
-                }, eventsPtr[group], SeekMode.Start);
+                }, eventsPtr[group]);
 
             }
 

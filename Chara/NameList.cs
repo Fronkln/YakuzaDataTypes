@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using System.Text;
+﻿using System.Text;
 using Yarhl.IO;
 
 namespace YakuzaDataTypes.Chara
@@ -32,7 +30,7 @@ namespace YakuzaDataTypes.Chara
 
             for(int i = 0; i < count; i++)
             {
-                nameList.Models.Add(reader.ReadByType(typeof(PXDHash)));
+                nameList.Models.Add((PXDHash)reader.ReadByType(typeof(PXDHash)));
             }
 
             return nameList;

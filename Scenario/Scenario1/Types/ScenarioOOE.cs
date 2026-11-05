@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
+﻿using System.Text;
 using Yarhl.FileFormat;
 using Yarhl.IO;
 
@@ -26,7 +23,25 @@ namespace YakuzaDataTypes.Scenario
             reader.Stream.Position += 4;
 
             ScenarioOOE scenario = new ScenarioOOE();     
-            ScenarioHeaderOOE header = reader.Read<ScenarioHeaderOOE>();
+
+            ScenarioHeaderOOE header = new ScenarioHeaderOOE {
+                Collections = new SizedPointer {
+                    Pointer = reader.ReadInt32(),
+                    Size = reader.ReadInt32()
+                },
+                Events = new SizedPointer {
+                    Pointer = reader.ReadInt32(),
+                    Size = reader.ReadInt32()
+                },
+                SequenceGroups = new SizedPointer {
+                    Pointer = reader.ReadInt32(),
+                    Size = reader.ReadInt32()
+                },
+                UnkDataY4 = new SizedPointer {
+                    Pointer = reader.ReadInt32(),
+                    Size = reader.ReadInt32()
+                }
+            };
 
             ScenarioVersion ver;
 
@@ -54,7 +69,10 @@ namespace YakuzaDataTypes.Scenario
             for(int i = 0; i < ptr.Size; i++)
             {
                 ScenarioCollectionOOE collection = new ScenarioCollectionOOE();
-                SizedPointer sequenceGroupsPtr = reader.Read<SizedPointer>();
+                SizedPointer sequenceGroupsPtr = new SizedPointer {
+                    Pointer = reader.ReadInt32(),
+                    Size = reader.ReadInt32()
+                };
 
                 collection.Unknown1 = reader.ReadInt32();
                 collection.Unknown2 = reader.ReadInt32();

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Yarhl.IO;
+﻿using Yarhl.IO;
 
 namespace YakuzaDataTypes.MSG
 {

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace YakuzaDataTypes
+﻿namespace YakuzaDataTypes
 {
     public class CharaInfoEntry
     {

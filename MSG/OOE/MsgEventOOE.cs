@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace YakuzaDataTypes.MSG
+﻿namespace YakuzaDataTypes.MSG
 {
     public class MsgEventOOE
     {

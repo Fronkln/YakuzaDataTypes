@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
-[System.Serializable]
+[Serializable]
 public class PACMsgGroup
 {
     public byte Unknown1;
@@ -9,5 +7,5 @@ public class PACMsgGroup
 
     public List<PACConditionChunkY5> Conditions = new List<PACConditionChunkY5>();
 
-    public PACRef[] Refs = new PACRef[0];
+    public PACRef[] Refs = [];
 }

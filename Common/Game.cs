@@ -1,6 +1,6 @@
 ﻿namespace YakuzaDataTypes
 {
-    public enum Game : int
+    public enum Game
     {
         Y3,
         Y4,

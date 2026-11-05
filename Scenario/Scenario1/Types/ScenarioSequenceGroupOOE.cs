@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Yarhl.IO;
+﻿using Yarhl.IO;
 
 namespace YakuzaDataTypes.Scenario
 {
@@ -42,13 +39,19 @@ namespace YakuzaDataTypes.Scenario
                 sequence.ChapterCode = reader.ReadStringPointer();
                 sequence.Unknown1 = reader.ReadInt32();
 
-                SizedPointer eventsPtr = reader.Read<SizedPointer>();
+                SizedPointer eventsPtr = new SizedPointer {
+                    Pointer = reader.ReadInt32(),
+                    Size = reader.ReadInt32()
+                };
                 
                 sequence.Unknown2 = reader.ReadInt32();
                 sequence.PlayerPosID = reader.ReadInt32();
                 sequence.Unknown3 = reader.ReadInt32();
 
-                SizedPointer unkDat = reader.Read<SizedPointer>();
+                SizedPointer unkDat = new SizedPointer {
+                    Pointer = reader.ReadInt32(),
+                    Size = reader.ReadInt32()
+                };
 
                 reader.Stream.RunInPosition(delegate { sequence.ReadUnkDat(reader, unkDat, version); }, 0);
                 reader.Stream.RunInPosition(delegate { sequence.ReadEvents(reader, eventsPtr, version); }, 0);

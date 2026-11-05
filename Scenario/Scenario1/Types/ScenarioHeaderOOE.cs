@@ -1,8 +1,5 @@
-﻿using Yarhl.IO.Serialization.Attributes;
-
-namespace YakuzaDataTypes.Scenario
+﻿namespace YakuzaDataTypes.Scenario
 {
-    [Serializable]
     public class ScenarioHeaderOOE
     {
         public SizedPointer Collections { get; set; }

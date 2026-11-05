@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Yarhl.IO;
+﻿using Yarhl.IO;
 
 namespace YakuzaDataTypes.MSG
 {
@@ -28,7 +27,7 @@ namespace YakuzaDataTypes.MSG
 
         internal virtual List<string> GetStrings()
         {
-            return new List<string>();
+            return [];
         }
     }
 }

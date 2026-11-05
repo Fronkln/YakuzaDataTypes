@@ -1,9 +1,5 @@
-﻿using System;
-using System.Text;
-using System.IO;
-using System.Collections.Generic;
+﻿using System.Text;
 using Yarhl.IO;
-using System.Linq;
 
 namespace YakuzaDataTypes.Scenario
 {
@@ -369,11 +365,11 @@ namespace YakuzaDataTypes.Scenario
 
             #region Write name pointers for state groups, categories and states
 
-            foreach (var stateGroup in stateGroupPtrs)
+            foreach (var stateGroupKey in stateGroupPtrs.Keys)
             {
-                writer.Stream.RunInPosition(delegate { writer.Write(stateGroupNamePtrs[stateGroup.Key]); }, stateGroupPtrs[stateGroup.Key]);
+                writer.Stream.RunInPosition(delegate { writer.Write(stateGroupNamePtrs[stateGroupKey]); }, stateGroupPtrs[stateGroupKey]);
 
-                foreach (var stateCategory in stateGroup.Key.Categories)
+                foreach (var stateCategory in stateGroupKey.Categories)
                     writer.Stream.RunInPosition(
                         delegate
                         {

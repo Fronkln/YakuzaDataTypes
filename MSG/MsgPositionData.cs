@@ -1,6 +1,6 @@
 ﻿namespace YakuzaDataTypes.MSG
 {
-    [System.Serializable]
+    [Serializable]
     public struct MsgPositionData
     {
         public PXDVector3 Position;
